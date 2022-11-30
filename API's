@@ -1,0 +1,21 @@
+
+comman on 
+   npm start 
+
+1) login get api 
+  http://localhost:5001/api/user/shankar/Pass@123456
+
+2) put user by userId api
+    userId=1
+    http://localhost:5001/api/putuser/${userId}
+
+3) post user
+    http://localhost:5001/api/user
+
+4) delete user by userId
+    userId=1
+     http://localhost:5001/api/delete-user/${userId}
+
+5) get all user 
+    http://localhost:5001/api/users
+    
