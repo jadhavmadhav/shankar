@@ -14,9 +14,15 @@ app.use(express.json())
 const postUserController = require('./routes/postUserRoute')
 
 const getUserRoute =require('./routes/getUserRoute')
+const getAllUserRoute = require('./routes/getAllUerRoute')
+const deleteUserRoute = require('./routes/deleteUserRoute')
+const putuserRoute = require('./routes/putUserRoute')
 
  app.use('/api',postUserController)
  app.use('/api',getUserRoute)
+ app.use('/api',getAllUserRoute)
+ app.use('/api',deleteUserRoute)
+ app.use('/api',putuserRoute)
 
 
 app.listen(PORT,()=>{
