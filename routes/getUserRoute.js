@@ -1,10 +1,10 @@
 
 
 const express = require('express')
-const getUserController = require('../controller/getUserController')
+const postLoginRoute = require('../controller/PostLoginRout')
 
 const router = express.Router()
 
-router.get('/user/:userName/:password',getUserController)
+router.post('/userlogin',postLoginRoute)
 
 module.exports = router

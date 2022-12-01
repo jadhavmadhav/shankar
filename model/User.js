@@ -18,6 +18,10 @@ const userSchema = mongoose.Schema({
      password: {
           type: String,
           required: true
+     },
+     status:{
+          type:String,
+          enum: ["active", "block"]
      }
 })
 userSchema.plugin(uniqueValidator);
